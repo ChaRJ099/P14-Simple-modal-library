@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './app.scss';
+import LightModal from './lib/light-modal/light-modal';
+import SimpleButton from './components/button/button';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default function App() {
+    const [modalVisible, setModalVisible] = useState(false);
+
+    const toogleModal = (e) => {
+        e.preventDefault();
+        setModalVisible(!modalVisible);
+    };
+
+    return (
+        <div className='test-container'>
+            <LightModal onClick={toogleModal} modalVisible={modalVisible} text={"Employee created!"} />
+            <SimpleButton onClick={toogleModal} />
+        </div>
+    )
 }
-
-export default App;
