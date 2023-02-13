@@ -1,8 +1,10 @@
 {
-  "name": "light-modal-test3",
-  "version": "0.1.0-alpha.0",
+  "name": "light-modal-test4",
+  "version": "0.1.0-alpha.5",
   "main": "dist/index.js",
+  "type": "module",
   "module": "dist/index.js",
+  "exports": "./index.js",
   "files": [
     "dist",
     "README.md"

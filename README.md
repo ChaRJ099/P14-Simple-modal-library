@@ -1,5 +1,30 @@
-# Library created for an exercise, not intended to be used
+# `light-modal`
 
-## light-modal-library, A library of React components created using `create-react-app`.
+A simple modal react component to test library sharing on npm.
+**Note:** is not intended to be used.
 
-### InstallationRun the following command:`npm install light-modal-library`
+## Usage
+
+```jsx
+import { LightModal } from "light-modal-test4/dist/light-modal";
+import React, { useState } from "react";
+
+function MyComponent() {
+  const [modalVisible, setModalVisible] = useState(false);
+
+  const toogleModal = () => {
+    setModalVisible(!modalVisible);
+
+  };
+
+  return (
+    <>
+        <LightModal onClick={toogleModal} modalVisible={modalVisible} text={"Employee created!"} />
+    </>
+  )
+
+}
+
+export default MyComponent;
+
+```
