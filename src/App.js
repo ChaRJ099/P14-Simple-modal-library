@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './app.scss';
-import LightModal from './lib/light-modal/light-modal';
+import LightModal from './lib/light-modal';
 import SimpleButton from './components/button/button';
 
 

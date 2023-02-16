@@ -1,3 +1,4 @@
+import React from "react";
 import "./light-modal.scss";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 
