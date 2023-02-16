@@ -6,7 +6,7 @@ A simple modal react component to test library sharing on npm.
 ## Usage
 
 ```jsx
-import { LightModal } from "light-modal-test4/dist/light-modal";
+import LightModal from "light-modal-test4/dist/light-modal";
 import React, { useState } from "react";
 
 function MyComponent() {
